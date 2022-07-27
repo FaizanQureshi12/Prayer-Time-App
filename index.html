@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="Prayer.css">
+    <script src="prayer.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h1 align="center"> Prayer Time App </h1>
+        </nav>
+        <br>
+        <form onsubmit="getData() ; return false ;">
+            <input type="text" maxlength="20" placeholder=" Enter Your City Name " autofocus required id="city">
+
+        </form><br>
+        <div id="no" class="hide">
+            <span class="date">
+                English Date <small>(انگریزی تاریخ) </small>
+                <div align="center" id="gregorian"></div>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <span class="date"> Hijri Date <small>( چاند تاریخ)</small>
+                <div align="center" id="hijri"></div>
+            </span>
+
+            <center>
+                <p id="holy"> Holy Month
+                    (<span id='month'></span>&nbsp;&nbsp;&nbsp;
+                    <span id="urdu"></span>)
+                </p>
+
+                <div class="inline">Fajr (فجر)&nbsp;
+                    <span id="fajr-time"></span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="inline"> Sun Rise (طلوع آفتاب)&nbsp;
+                    <span id="sunrise-time"></span>
+                </div><br><br>
+
+                <div class="inline">Zhuhr (ظهر)&nbsp;
+                    <span id="zuhr-time"></span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="inline">Asr (عصر)&nbsp;
+                    <span id="asr-time"></span>
+                </div><br><br>
+
+                <div class="inline"> Sun Set (غروب آفتاب)&nbsp;
+                    <span id="sunset"></span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="inline">Maghrib (مغرب)&nbsp;
+                    <span id="maghrib-time"></span>
+                </div><br><br>
+
+                <div class="inline"> Isha (عشاء)&nbsp;
+                    <span id="isha-time"></span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="inline"> Mid Night&nbsp;
+                    <span id="midnight"></span>
+                </div>
+            </center>
+        </div>
+    </main>
+
+</body>
+
+</html>

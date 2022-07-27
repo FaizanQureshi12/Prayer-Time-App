@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(70, 131, 180, 0.904);
+}
+
+main {
+    box-shadow: 10px 10px;
+    background-color: rgba(70, 131, 180, 0.961);
+    border-radius: 10px;
+    padding: 7px;
+    margin: 20px;
+}
+
+nav {
+    background-color: wheat;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(0, 255, 255, 0.49);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.date {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: violet;
+}
+
+#holy {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: violet;
+}
+
+.inline {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: violet;
+}
